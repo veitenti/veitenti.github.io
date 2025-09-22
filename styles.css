@@ -1,0 +1,146 @@
+body {
+  background-color: white;
+  color: #111;
+  font-family: "Segoe UI", "Arial", sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  z-index: 100;
+
+  h1 {
+    position: fixed;
+    top: 0;
+    left: 10%;
+    background-color: #da392a;
+    color: white;
+    border-radius: 0 0 1em 1em;
+    display: inline-block;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+    margin: 0;
+    padding: 0.2em 1em 0.5em 1em;
+
+    img {
+      position: relative;
+      bottom: 0.1em;
+    }
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: 20%;
+    background-color: white;
+    border-radius: 0 0 1em 1em;
+    display: inline-block;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+
+    a {
+      padding: 1em 2em;
+      display: inline-block;
+    }
+    a:hover {
+      background-color: #da392a;
+      color: white;
+    }
+    a:first-child:hover {
+      border-radius: 0 0 0 1em;
+    }
+    a:last-child:hover {
+      border-radius: 0 0 1em 0;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 0.25em;
+  background-color: black;
+  color: white;
+
+  img {
+    position: relative;
+    bottom: 0.1em;
+  }
+}
+
+section {
+  border-radius: 2em 2em 0 0;
+  margin-top: -2em;
+  padding: 2em;
+  background-position: right;
+
+  &#start {
+    height: 1000px;
+    background-image: url("assets/background.jpg");
+    background-size: cover;
+  }
+
+  &#games {
+    height: 500px;
+    background-color: white;
+  }
+
+  &#contact {
+    height: 250px;
+    background-color: orchid;
+  }
+}
+
+#intro {
+  background-color: white;
+  display: inline-block;
+  padding: 4em;
+  border-radius: 2em;
+  position: relative;
+  top: 25%;
+  left: 5%;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+}
+
+#game-tiles {
+  display: flex;
+  gap: 3em;
+  position: relative;
+  top: -300px;
+}
+
+.game-tile {
+  background-color: white;
+  display: inline-block;
+  padding: 4em;
+  border-radius: 2em;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+
+  &#ipa {
+    background-image: url("assets/ipa.png");
+    background-size: cover;
+    background-position-x: center;
+  }
+
+  &#oos {
+    background-image: url("assets/oos.png");
+    background-size: cover;
+  }
+}
+
+#about {
+  text-align: center;
+}
