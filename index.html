@@ -1,53 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>veitenti@github</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #222;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        margin: 0;
+      }
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=https://pixelpatterns.itch.io/">
-  <title>Redirecting…</title>
-  <link rel="icon" type="image/png" href="favicon.png">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #fafafa;
-      color: #222;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
+      a {
+        display: block;
+        padding: 1em;
+        min-width: 12em;
+        text-align: center;
+        color: #da392a;
+        text-decoration: none;
+        font-weight: bold;
 
-    .redirect-box {
-      background: #fff;
-      border-radius: 1em;
-      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
-      padding: 2em 3em;
-      text-align: center;
-    }
+        &:hover {
+          background-color: #da392a2d;
+        }
+      }
+    </style>
+  </head>
 
-    a {
-      color: #da392a;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
-  <script>
-    window.onload = function () {
-      window.location.replace('https://pixelpatterns.itch.io/');
-    };
-  </script>
-</head>
-
-<body>
-  <div class="redirect-box">
-    <h1>Redirecting…</h1>
-    <p>If you are not redirected automatically, <a href="https://pixelpatterns.itch.io/">click here</a>.</p>
-  </div>
-</body>
-
+  <body>
+    <a rel="me" href="https://mastodon.social/@veitenti">Mastodon</a>
+    <a rel="me" href="https://github.com/veitenti">GitHub</a>
+    <a rel="me" href="https://pixelpatterns.itch.io">itch.io</a>
+  </body>
 </html>
